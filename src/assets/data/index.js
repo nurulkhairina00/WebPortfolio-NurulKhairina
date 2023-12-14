@@ -86,28 +86,28 @@ export const dataPortfolio = [
     name: "projek1",
     judul: "Landing Page Assist.id",
     desc: " The Assist.id landing page system explains information about the company and the convenience of Assist.id products to users so that they can increase sales of Assist.id products. This website was built using NodeJS and ReactJS.",
-    image: "./src/assets/images/projek1/landingpage1.png",
+    image: "./images/projek1/landingpage1.png",
   },
   {
     id: 2,
     name: "projek2",
     judul: "GIS Workshop Website",
     desc: "Geographic Information System Website, which displays the location of the workshop in Pekanbaru City. In addition, if the user finds a workshop that is not in the system, he can add a workshop request, but the administrator who will approve displays the workshop in Pekanbaru city on the system and the administrator can make changes to the workshop data. This website was built using OpenLayer as a base map and using PHP.",
-    image: "./src/assets/images/projek2/gis1.png",
+    image: "./images/projek2/gis1.png",
   },
   {
     id: 3,
     name: "projek3",
     judul: "PrintHub Website",
     desc: "The Print Hub application is a website-based application that provides photocopy location information in Rumbai District and can place orders at the photocopy shop. This website was built using PHP with CI Framework.",
-    image: "./src/assets/images/projek3/printhub1.png",
+    image: "./images/projek3/printhub1.png",
   },
   {
     id: 4,
     name: "projek4",
     judul: "Marriage Registration Website",
     desc: "A website-based marriage registration information system to make it easier for prospective brides to register their marriages online and make it easier for the religious affairs office to record marriage registrations. This website was built using ASP.NET.",
-    image: "./src/assets/images/projek4/married3.png",
+    image: "./images/projek4/married3.png",
   },
 ];
 
@@ -115,67 +115,67 @@ export const technologyLogo = [
   {
     id: 1,
     name: "HTML5",
-    link: "./src/assets/images/logo/html.svg",
+    link: "./images/logo/html.svg",
   },
   {
     id: 2,
     name: "CSS3",
-    link: "./src/assets/images/logo/css.svg",
+    link: "./images/logo/css.svg",
   },
   {
     id: 3,
     name: "JavaScipt",
-    link: "./src/assets/images/logo/js.svg",
+    link: "./images/logo/js.svg",
   },
   {
     id: 4,
     name: "Bootstrap",
-    link: "./src/assets/images/logo/bootstrap.svg",
+    link: "./images/logo/bootstrap.svg",
   },
   {
     id: 5,
     name: "Material UI",
-    link: "./src/assets/images/logo/materialui.svg",
+    link: "./images/logo/materialui.svg",
   },
   {
     id: 6,
     name: "Tailwindcss",
-    link: "./src/assets/images/logo/tailwindcss.svg",
+    link: "./images/logo/tailwindcss.svg",
   },
   {
     id: 7,
     name: "ReactJS",
-    link: "./src/assets/images/logo/react.svg",
+    link: "./images/logo/react.svg",
   },
   {
     id: 8,
     name: "NodeJS",
-    link: "./src/assets/images/logo/nodejs.svg",
+    link: "./images/logo/nodejs.svg",
   },
   {
     id: 9,
     name: "ExpressJS",
-    link: "./src/assets/images/logo/expressjs.svg",
+    link: "./images/logo/expressjs.svg",
   },
   {
     id: 10,
     name: "PHP",
-    link: "./src/assets/images/logo/php.svg",
+    link: "./images/logo/php.svg",
   },
   {
     id: 11,
     name: "PostgreSQL",
-    link: "./src/assets/images/logo/postgresql.svg",
+    link: "./images/logo/postgresql.svg",
   },
   {
     id: 12,
     name: "MySQL",
-    link: "./src/assets/images/logo/mysql.svg",
+    link: "./images/logo/mysql.svg",
   },
   {
     id: 13,
     name: "Rest APIs",
-    link: "./src/assets/images/logo/restapi.svg",
+    link: "./images/logo/restapi.svg",
   },
 ];
 
@@ -183,37 +183,37 @@ export const toolsLogo = [
   {
     id: 1,
     name: "Vscode",
-    link: "./src/assets/images/logo/vscode.svg",
+    link: "./images/logo/vscode.svg",
   },
   {
     id: 2,
     name: "Git",
-    link: "./src/assets/images/logo/git.svg",
+    link: "./images/logo/git.svg",
   },
   {
     id: 3,
     name: "Github",
-    link: "./src/assets/images/logo/github.svg",
+    link: "./images/logo/github.svg",
   },
   {
     id: 4,
     name: "Gitlab",
-    link: "./src/assets/images/logo/gitlab.svg",
+    link: "./images/logo/gitlab.svg",
   },
   {
     id: 5,
     name: "Npm",
-    link: "./src/assets/images/logo/npm.svg",
+    link: "./images/logo/npm.svg",
   },
   {
     id: 6,
     name: "Postman",
-    link: "./src/assets/images/logo/postman.svg",
+    link: "./images/logo/postman.svg",
   },
   {
     id: 7,
     name: "DBeaver",
-    link: "./src/assets/images/logo/dbeaver.svg",
+    link: "./images/logo/dbeaver.svg",
   },
 ];
 

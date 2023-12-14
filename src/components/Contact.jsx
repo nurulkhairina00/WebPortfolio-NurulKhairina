@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-wrap">
           <div className="flex w-full items-center px-4 lg:w-[60%]">
-            <img src="./src/assets/images/contact.svg" alt="contact" />
+            <img src="./images/contact.svg" alt="contact" />
           </div>
           <div className="w-full p-4 lg:w-[40%] bg-secondary rounded-3xl dark:bg-light">
             <h4 className="font-extrabold text-gray text-3xl xl:text-4xl text-center py-9 dark:text-secondary hidden lg:block">
