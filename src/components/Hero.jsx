@@ -22,7 +22,7 @@ const Hero = () => {
             animate="show"
             className="flex flex-wrap"
           >
-            <div className="w-full self-center px-4 lg:w-1/2 pt-20 lg:pt-0 text-center text-dark sm:text-start dark:text-light">
+            <div className="w-full self-center px-4 lg:w-1/2 pt-20 lg:pt-0 text-center text-[18px] sm:text-[2em] text-dark sm:text-start dark:text-light">
               <h1 className="text-2xl font-bold text-primary pb-5">
                 Hello There!,
               </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                 wrapper="span"
                 speed={50}
                 style={{
-                  fontSize: "2em",
+                  // fontSize: "22px",
                   display: "inline-block",
                   fontWeight: "800",
                 }}

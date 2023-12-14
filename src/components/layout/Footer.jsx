@@ -22,8 +22,9 @@ const Footer = () => {
               </h2>
               <h3 className="font-bold text-2xl mb-2">Contact</h3>
               <p>nurulkhairina00@gmail.com</p>
-              <p>Jl. Karet Pasar Baru Barat II No.4 Tanah Abang,</p>
-              <p>Jakarta Pusat</p>
+              <p>
+                Jl. Karet Pasar Baru Barat II No.4 Tanah Abang, Jakarta Pusat
+              </p>
             </div>
             <div className="w-full px-4 mb-12 md:w-1/3">
               <h3 className="font-semibold text-xl text-white mb-5">
