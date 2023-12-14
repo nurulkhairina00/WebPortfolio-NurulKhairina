@@ -86,28 +86,28 @@ const Hero = () => {
             <div className="w-full self-end px-4 lg:w-1/2 md:py-10">
               <div className="relative mt-10 lg:mt-0 lg:right-0 z-10">
                 <img
-                  src="/public/hero.svg"
-                  alt="hero"
+                  src="./hero.svg"
+                  alt="hero1"
                   className="max-w-full mx-auto"
                 />
                 <img
-                  src="./public/hero.svg"
+                  src="hero.svg"
                   alt="hero2"
                   className="max-w-full mx-auto"
                 />
                 <img
-                  src="./hero.svg"
+                  src="./assets/images/hero1.svg"
                   alt="hero3"
                   className="max-w-full mx-auto"
                 />
                 <img
-                  src="/hero.svg"
+                  src="/assets/images/hero1.svg"
                   alt="hero4"
                   className="max-w-full mx-auto"
                 />
                 <img
                   src="vite.svg"
-                  alt="hero2"
+                  alt="hero5"
                   className="max-w-full mx-auto pt-4"
                 />
               </div>
