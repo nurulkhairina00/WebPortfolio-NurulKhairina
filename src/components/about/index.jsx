@@ -30,7 +30,7 @@ const Index = () => {
           <div className="flex flex-wrap">
             <motion.div
               ref={ref}
-              variants={fadeVariant("right", "spring", 1.25, 0.2)}
+              variants={fadeVariant("up", "spring", 1.25, 0.2)}
               initial="hidden"
               animate={inView ? "show" : "hidden"}
               className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block"
@@ -43,7 +43,7 @@ const Index = () => {
             </motion.div>
             <motion.div
               ref={ref}
-              variants={fadeVariant("left", "spring", 1.25, 0.2)}
+              variants={fadeVariant("up", "spring", 1.25, 0.2)}
               initial="hidden"
               animate={inView ? "show" : "hidden"}
               className="w-full px-4 lg:w-1/2 lg:pt-10 xl:pt-16"
@@ -74,10 +74,11 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className="py-5 md:py-10">
-            <h4 className="font-extrabold text-dark text-2xl sm:text-4xl text-center pb-5 dark:text-light">
-              <span className="text-primary">MY WORK</span> EXPERIENCE
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h4 className="text-start font-extrabold text-2xl sm:text-3xl text-dark pb-2 dark:text-light">
+              My Work Experience
             </h4>
+            <div className="border-[3px] w-20 border-primary rounded-full"></div>
           </div>
           <WorkExperience />
         </div>

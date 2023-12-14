@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { zoomVariant } from "../utils/motion/motion";
+import { fadeVariant } from "../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-light dark:bg-slate-800">
       <motion.div
         ref={ref}
-        variants={zoomVariant("in", "spring", 1, 0.2)}
+        variants={fadeVariant("up", "spring", 1, 0.2)}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
         className="container lg:w-[80%] lg:pt-10"

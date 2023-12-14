@@ -24,6 +24,9 @@ const WorkExperience = () => {
             <VerticalTimelineElement
               key={item.id}
               className="vertical-timeline-element--work dark:text-light"
+              contentArrowStyle={{
+                borderRight: `7px solid ${isWorkIcon ? "#00909E" : "#264653"}`,
+              }}
               date={item.start_date + " - " + item.end_date}
               icon={
                 isWorkIcon ? (

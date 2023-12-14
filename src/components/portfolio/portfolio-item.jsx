@@ -49,7 +49,7 @@ const PortofolioItem = () => {
             slidesPerView: 2,
           },
         }}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 5000 }}
       >
         {dataPortfolio.map((item) => (
           <SwiperSlide key={item.id}>

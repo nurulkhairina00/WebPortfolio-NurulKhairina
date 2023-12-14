@@ -15,7 +15,7 @@ export default {
         primary: "#00909E",
         secondary: "#222831",
         dark: "#264653",
-        gray: "#DAE1E7",
+        gray: "#DDE6ED",
         light: "#f8f8f8",
       },
       screens: {

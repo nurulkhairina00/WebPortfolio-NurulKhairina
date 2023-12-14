@@ -13,8 +13,8 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-dark pt-24 pb-8 dark:bg-primary">
-        <div className="container">
+      <footer className="bg-dark pt-10 pb-8 dark:bg-primary md:bg-light md:pb-4 dark:md:bg-slate-800">
+        <div className="container md:bg-dark dark:md:bg-primary md:rounded-3xl md:p-8">
           <div className="flex flex-wrap">
             <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
               <h2 className="font-bold text-3xl text-white mb-5">
@@ -62,7 +62,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full pt-10 border-t border-primary dark:border-dark">
+          <div className="w-full pt-7 border-t border-primary dark:border-dark">
             <p className="font-medium text-xs text-white text-center">
               Copyright © 2023 By{" "}
               <a

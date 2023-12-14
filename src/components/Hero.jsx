@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="pt-20 max-h-full dark:bg-slate-800 bg-light"
+        className="pt-16 max-h-full dark:bg-slate-800 bg-light"
       >
         <div className="container">
           <motion.div

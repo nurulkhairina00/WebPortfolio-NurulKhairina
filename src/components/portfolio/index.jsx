@@ -28,10 +28,14 @@ const Index = () => {
           className="container"
         >
           <div className="w-full px-4">
-            <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="max-w-4xl mx-auto text-center mb-10">
               <h4 className="font-extrabold text-dark text-2xl sm:text-4xl text-center pb-5 dark:text-light">
                 MY <span className="text-primary">PORTFOLIO</span>
               </h4>
+              <p className="pt-3 text-secondary dark:text-light">
+                a collection of projects created as a team or individually using
+                some technology.
+              </p>
             </div>
           </div>
           <PortfolioSwiper
