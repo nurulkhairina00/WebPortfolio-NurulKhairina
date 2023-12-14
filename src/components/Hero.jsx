@@ -101,6 +101,26 @@ const Hero = () => {
                   className="max-w-full mx-auto"
                 />
                 <img
+                  src="src/assets/images/hero1.svg"
+                  alt="hero4"
+                  className="max-w-full mx-auto"
+                />
+                <img
+                  src=".src/assets/images/hero1.svg"
+                  alt="hero3"
+                  className="max-w-full mx-auto"
+                />
+                <img
+                  src="./src/assets/images/hero1.svg"
+                  alt="hero3"
+                  className="max-w-full mx-auto"
+                />
+                <img
+                  src="/src/assets/images/hero1.svg"
+                  alt="hero4"
+                  className="max-w-full mx-auto"
+                />
+                <img
                   src="/assets/images/hero1.svg"
                   alt="hero4"
                   className="max-w-full mx-auto"
