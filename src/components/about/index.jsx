@@ -36,7 +36,7 @@ const Index = () => {
               className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block"
             >
               <img
-                src="/src/assets/images/rina.png"
+                src="./src/assets/images/rina.png"
                 alt="profil"
                 className="cursor-pointer hover:scale-105 hover:ease-in-out"
               />
@@ -51,7 +51,7 @@ const Index = () => {
               <PersonelInfo />
               <div className="flex flex-col items-center sm:flex-row sm:justify-start pt-10 gap-5">
                 <a
-                  href="document/CV Nurul Khairina Surbakti.pdf"
+                  href="./src/assets/document/CV Nurul Khairina Surbakti.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="text-base font-semibold text-secondary border-2 border-secondary py-3 px-8 rounded-full hover:bg-primary hover:text-light hover:border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-gray dark:hover:text-primary"
@@ -68,7 +68,7 @@ const Index = () => {
             </motion.div>
             <div className="w-full px-4 mb-3 lg:w-1/2 lg:hidden">
               <img
-                src="/src/assets/images/rina.png"
+                src="./src/assets/images/rina.png"
                 alt="profil"
                 className="cursor-pointer hover:scale-105 hover:ease-in-out"
               />
