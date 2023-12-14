@@ -33,7 +33,7 @@ const Tools = () => {
       </div>
       <motion.div
         ref={ref}
-        variants={fadeVariant("left", "spring", 1.5, 0.2)}
+        variants={fadeVariant("left", "spring", 1.25, 0.2)}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
         className="flex flex-wrap w-full px-4 gap-4 justify-center sm:gap-6 lg:w-5/6 lg:mx-auto"

@@ -16,7 +16,7 @@ const Index = () => {
       <div className="container">
         <motion.div
           ref={ref}
-          variants={fadeVariant("up", "tween", 1, 0.2)}
+          variants={fadeVariant("up", "spring", 1.25, 0.2)}
           initial="hidden"
           animate={inView ? "show" : "hidden"}
           className="w-full px-4"

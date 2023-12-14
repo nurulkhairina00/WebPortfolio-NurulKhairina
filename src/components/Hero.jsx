@@ -48,7 +48,7 @@ const Hero = () => {
                 individually or in a team.
               </p>
               <motion.div
-                variants={fadeVariant("right", "keyframes", 1.5, 0.4)}
+                variants={fadeVariant("right", "spring", 1.5, 0.2)}
                 initial="hidden"
                 animate="show"
                 className="flex flex-col items-center gap-3 mt-10 sm:flex-row md:items-start"

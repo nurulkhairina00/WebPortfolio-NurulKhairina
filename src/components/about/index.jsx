@@ -1,7 +1,14 @@
 import PersonelInfo from "./personel-info";
 import WorkExperience from "./work-experience";
+import { motion } from "framer-motion";
+import { fadeVariant } from "../../utils/motion/motion";
+import { useInView } from "react-intersection-observer";
 
 const Index = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   const handleScroll = (value) => {
     const section = document.getElementById(value);
     section.scrollIntoView({ behavior: "smooth" });
@@ -11,14 +18,36 @@ const Index = () => {
     <>
       <section id="about" className="pt-24 pb-16 bg-gray dark:bg-slate-800">
         <div className="container">
-          <h4 className="font-extrabold text-dark text-2xl sm:text-4xl text-center pb-5 dark:text-light">
+          <motion.h4
+            ref={ref}
+            variants={fadeVariant("up", "spring", 1.25, 0.2)}
+            initial="hidden"
+            animate={inView ? "show" : "hidden"}
+            className="font-extrabold text-dark text-2xl sm:text-4xl text-center pb-5 dark:text-light"
+          >
             <span className="text-primary">ABOUT</span> ME
-          </h4>
+          </motion.h4>
           <div className="flex flex-wrap">
-            <div className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block">
-              <img src="/src/assets/images/rina.png" alt="profil" />
-            </div>
-            <div className="w-full px-4 lg:w-1/2 lg:pt-10 xl:pt-16">
+            <motion.div
+              ref={ref}
+              variants={fadeVariant("right", "spring", 1.25, 0.2)}
+              initial="hidden"
+              animate={inView ? "show" : "hidden"}
+              className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block"
+            >
+              <img
+                src="/src/assets/images/rina.png"
+                alt="profil"
+                className="cursor-pointer hover:scale-105 hover:ease-in-out"
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={fadeVariant("left", "spring", 1.25, 0.2)}
+              initial="hidden"
+              animate={inView ? "show" : "hidden"}
+              className="w-full px-4 lg:w-1/2 lg:pt-10 xl:pt-16"
+            >
               <PersonelInfo />
               <div className="flex flex-col items-center sm:flex-row sm:justify-start pt-10 gap-5">
                 <a
@@ -36,9 +65,13 @@ const Index = () => {
                   Get in touch
                 </button>
               </div>
-            </div>
+            </motion.div>
             <div className="w-full px-4 mb-3 lg:w-1/2 lg:hidden">
-              <img src="/src/assets/images/rina.png" alt="profil" />
+              <img
+                src="/src/assets/images/rina.png"
+                alt="profil"
+                className="cursor-pointer hover:scale-105 hover:ease-in-out"
+              />
             </div>
           </div>
           <div className="py-5 md:py-10">
