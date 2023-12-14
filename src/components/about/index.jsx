@@ -36,7 +36,7 @@ const Index = () => {
               className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block"
             >
               <img
-                src="./src/assets/images/rina.png"
+                src="/images/rina.png"
                 alt="profil"
                 className="cursor-pointer hover:scale-105 hover:ease-in-out"
               />
@@ -68,7 +68,7 @@ const Index = () => {
             </motion.div>
             <div className="w-full px-4 mb-3 lg:w-1/2 lg:hidden">
               <img
-                src="./src/assets/images/rina.png"
+                src="./images/rina.png"
                 alt="profil"
                 className="cursor-pointer hover:scale-105 hover:ease-in-out"
               />

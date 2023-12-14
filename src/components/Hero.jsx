@@ -87,18 +87,8 @@ const Hero = () => {
               <div className="relative mt-10 lg:mt-0 lg:right-0 z-10">
                 <img
                   src="./images/hero.svg"
-                  alt="hero1"
+                  alt="hero"
                   className="max-w-full mx-auto"
-                />
-                <img
-                  src="/images/hero.svg"
-                  alt="hero2"
-                  className="max-w-full mx-auto"
-                />
-                <img
-                  src="vite.svg"
-                  alt="hero5"
-                  className="max-w-full mx-auto pt-4"
                 />
               </div>
             </div>
