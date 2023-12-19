@@ -54,7 +54,7 @@ const Index = () => {
                   href="./document/CV Nurul Khairina Surbakti.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base font-semibold text-secondary border-2 border-secondary py-3 px-8 rounded-full hover:bg-primary hover:text-light hover:border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-gray dark:hover:text-primary"
+                  className="text-base font-semibold text-secondary border-2 border-secondary py-[10px] px-8 rounded-full hover:bg-primary hover:text-light hover:border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-gray dark:hover:text-primary"
                 >
                   Download CV
                 </a>

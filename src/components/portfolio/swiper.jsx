@@ -44,70 +44,38 @@ const PortfolioSwiper = (props) => {
           slidesPerView: 1,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
       }}
-      autoplay={{ delay: 2000 }}
+      autoplay={{ delay: 4000 }}
     >
       {data.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="bg-gray shadow-lg rounded-md px-2 pt-2 pb-10 md:px-4 md:pt-4 md:pb-12">
             <img
               src={item.image}
-              alt="projek1"
+              alt={item.name}
               className="w-full object-cover mb-4 rounded-md"
             />
             <h3 className="text-sm font-bold mb-2 md:text-lg">{item.judul}</h3>
             <div className="flex flex-wrap gap-2">
-              <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#ea5500] text-light">
-                HTML
-              </div>
-              <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#039be5] text-light">
-                CSS
-              </div>
-              <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#ffd600] text-secondary">
-                Javascript
-              </div>
-              <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#7c4dff] text-light">
-                Bootstrap
-              </div>
-              {item.name === "projek1" && (
-                <>
-                  <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#61dafb] text-secondary">
-                    ReactJS
-                  </div>
-                  <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#848c94] text-light">
-                    Restful Api
-                  </div>
-                  <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#f4511e] text-light">
-                    Github
-                  </div>
-                </>
-              )}
-              {(item.name === "projek2" || item.name === "projek3") && (
-                <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#dcd5f2] text-secondary">
-                  PHP
-                </div>
-              )}
-              {item.name === "projek3" && (
-                <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#ee4323] text-light">
+              {item.badges.map((badge, index) => (
+                <img
+                  key={index}
+                  src={badge}
+                  alt={`badge ${index}`}
+                  className="rounded-lg w-1/6 h-5"
+                />
+              ))}
+              {item.name === "projek5" && (
+                <div className="flex items-center text-[10px] rounded-lg py-[2px] px-2 font-semibold bg-[#ee4323] text-light">
                   Codeigniter
-                </div>
-              )}
-              {item.name === "projek4" && (
-                <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#086697] text-light">
-                  ASP.NET
-                </div>
-              )}
-              {item.name !== "projek1" && (
-                <div className="flex text-xs rounded-full py-[2px] px-3 border border-light bg-[#037276] text-light">
-                  MySQL
                 </div>
               )}
             </div>
             <button
               type="button"
-              className="absolute bottom-2 right-4 text-sm text-primary cursor-pointer"
+              className="absolute bottom-2 right-4 text-sm text-primary cursor-pointer font-semibold"
               onClick={() => {
                 setShowModal(true);
                 setRead(item);

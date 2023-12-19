@@ -19,7 +19,7 @@ const PortfolioModal = (props) => {
           <div
             className={`bg-light rounded-xl shadow transition-all ${
               showModal ? "scale-100 opacity-100" : "scale-125 opacity-0"
-            } w-full md:w-2/3 lg:w-1/3 dark:bg-slate-800 dark:text-light`}
+            } w-full md:w-2/3 lg:w-2/5 dark:bg-slate-800 dark:text-light`}
           >
             <div className="bg-primary p-4 rounded-tl-xl rounded-tr-xl">
               <AiOutlineClose

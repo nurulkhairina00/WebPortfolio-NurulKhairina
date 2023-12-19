@@ -33,7 +33,7 @@ const Index = () => {
                 MY <span className="text-primary">PORTFOLIO</span>
               </h4>
               <p className="pt-3 text-secondary dark:text-light">
-                a collection of projects created as a team or individually using
+                A collection of projects created as a team or individually using
                 some technology.
               </p>
             </div>
