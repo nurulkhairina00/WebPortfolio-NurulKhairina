@@ -1,11 +1,41 @@
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { fadeVariant } from "../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const form = useRef();
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_30z1uw9",
+        "template_129pjqq",
+        form.current,
+        "QZqcoOsdjn2oEcFWG"
+      )
+      .then(
+        (res) => {
+          console.log(res.text);
+          form.current.reset();
+          Swal.fire({
+            imageUrl: "./images/success.png",
+            title: "Email send successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        },
+        (error) => {
+          Swal.fire(error.text);
+        }
+      );
+  };
 
   return (
     <section id="contact" className="py-24 bg-light dark:bg-slate-800">
@@ -29,29 +59,32 @@ const Contact = () => {
             <h4 className="font-extrabold text-gray text-3xl xl:text-4xl text-center py-9 dark:text-secondary hidden lg:block">
               <span className="text-primary">CONTACT</span> ME
             </h4>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="w-full px-4 mb-4 mt-4 lg:mt-0">
                 <input
                   placeholder="Name"
                   type="text"
-                  id="name"
-                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-xl shadow-md focus:outline-none focus:ring-light focus:ring-1 focus:border-lig dark:focus:ring-2"
+                  name="from_name"
+                  required
+                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-lg shadow-md focus:outline-primary focus:border-light"
                 ></input>
               </div>
               <div className="w-full px-4 mb-4">
                 <input
                   placeholder="E-mail"
                   type="email"
-                  id="email"
-                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-xl shadow-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary dark:focus:ring-2"
+                  name="user_email"
+                  required
+                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-lg shadow-md focus:outline-primary focus:border-light"
                 ></input>
               </div>
               <div className="w-full px-4 mb-8">
                 <textarea
                   placeholder="Message"
                   type="textarea"
-                  id="message"
-                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-xl shadow-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32 dark:focus:ring-2"
+                  name="message"
+                  required
+                  className="w-full bg-gray text-secondary p-2 mt-1 rounded-lg shadow-md focus:outline-primary focus:border-light h-32"
                 />
               </div>
               <div className="w-full px-4 text-center">
