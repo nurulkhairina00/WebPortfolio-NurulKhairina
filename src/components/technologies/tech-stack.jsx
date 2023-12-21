@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeVariant } from "../../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
-import { technologyLogo } from "../../assets/data";
+import { technologyLogo } from "../../data";
 
 const TechStack = () => {
   const [visibleItems, setVisibleItems] = useState(0);

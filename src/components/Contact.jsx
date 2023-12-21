@@ -4,6 +4,7 @@ import { fadeVariant } from "../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { serviceID, templateID, publicKey } from "../utils/config";
 
 const Contact = () => {
   const form = useRef();
@@ -13,28 +14,23 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_30z1uw9",
-        "template_129pjqq",
-        form.current,
-        "QZqcoOsdjn2oEcFWG"
-      )
-      .then(
-        (res) => {
-          console.log(res.text);
-          form.current.reset();
-          Swal.fire({
-            imageUrl: "./images/success.png",
-            title: "Email send successfully",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        },
-        (error) => {
-          Swal.fire(error.text);
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
+      (res) => {
+        console.log(res.text);
+        form.current.reset();
+        Swal.fire({
+          // imageUrl: "./images/success.png",
+          icon: "success",
+          title: "Succedd!",
+          text: "Email send successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      },
+      (error) => {
+        Swal.fire(error.text);
+      }
+    );
   };
 
   return (

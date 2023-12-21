@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeVariant } from "../../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
-import { toolsLogo } from "../../assets/data";
+import { toolsLogo } from "../../data";
 
 const Tools = () => {
   const [visibleItems, setVisibleItems] = useState(0);

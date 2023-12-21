@@ -1,5 +1,5 @@
 import { RiArrowUpSLine } from "react-icons/ri";
-import { svgImageHero } from "../../assets/data";
+import { svgImageHero } from "../../data";
 
 const Footer = () => {
   const handleBackToTop = () => {

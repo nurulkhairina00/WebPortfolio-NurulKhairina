@@ -4,7 +4,7 @@ import PortfolioModal from "./modal";
 import { motion } from "framer-motion";
 import { fadeVariant } from "../../utils/motion/motion";
 import { useInView } from "react-intersection-observer";
-import { dataPortfolio } from "../../assets/data";
+import { dataPortfolio } from "../../data";
 
 const Index = () => {
   const [showModal, setShowModal] = useState(false);

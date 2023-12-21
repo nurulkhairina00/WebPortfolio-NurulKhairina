@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeVariant } from "../utils/motion/motion";
-import { svgImageHero } from "../assets/data";
+import { svgImageHero } from "../data";
 
 const Hero = () => {
   const handleScroll = (value) => {

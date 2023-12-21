@@ -11,7 +11,7 @@ import {
   EffectCoverflow,
   Navigation,
 } from "swiper/modules";
-import { dataPortfolio } from "../../assets/data";
+import { dataPortfolio } from "../../data";
 
 const PortofolioItem = () => {
   const [read, setRead] = useState({});

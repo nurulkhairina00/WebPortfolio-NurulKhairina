@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
-import { menuLinks } from "../../assets/data";
+import { menuLinks } from "../../data";
 
 const Navbar = (props) => {
   const { darkMode, setDarkMode } = props;

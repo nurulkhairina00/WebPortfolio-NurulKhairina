@@ -1,5 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { workExperience } from "../../assets/data";
+import { workExperience } from "../../data";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
