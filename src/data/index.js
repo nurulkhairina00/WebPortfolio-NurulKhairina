@@ -214,8 +214,8 @@ export const technologyLogo = [
   },
   {
     id: 10,
-    name: "PHP",
-    link: "./images/logo/php.svg",
+    name: "ColdFusion",
+    link: "./images/logo/coldfusion.svg",
   },
   {
     id: 11,
@@ -229,6 +229,11 @@ export const technologyLogo = [
   },
   {
     id: 13,
+    name: "SQL Server",
+    link: "./images/logo/sqlserver.svg",
+  },
+  {
+    id: 14,
     name: "Rest APIs",
     link: "./images/logo/restapi.svg",
   },
