@@ -19,7 +19,6 @@ const Contact = () => {
         console.log(res.text);
         form.current.reset();
         Swal.fire({
-          // imageUrl: "./images/success.png",
           icon: "success",
           title: "Success!",
           text: "Email send successfully",
