@@ -36,8 +36,8 @@ const Footer = () => {
                       className="fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
-                      width={index === 0 ? 25 : 20}
-                      height={index === 0 ? 25 : 20}
+                      width={index === 0 ? 20 : 16}
+                      height={index === 0 ? 20 : 16}
                       viewBox={index === 0 ? "0 0 50 50" : "0 0 24 24"}
                     >
                       <path d={item.svg}></path>

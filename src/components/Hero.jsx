@@ -30,7 +30,7 @@ const Hero = () => {
                 sequence={[
                   "I'M Nurul Khairina Surbakti",
                   1000,
-                  "I'M Full Stack Developer",
+                  "I'M Software Maintenance",
                   1000,
                 ]}
                 wrapper="span"
@@ -43,9 +43,11 @@ const Hero = () => {
                 repeat={Infinity}
               />
               <p className="font-medium text-secondary text-base my-5 dark:text-light">
-                I am a Full Stack Developer with two years experience. My
-                expertise is creating and designing websites, I can work
-                individually or in a team.
+                I am a Software Maintenance Specialist with two years of
+                experience in optimizing and supporting web applications. I
+                specialize in debugging, system maintenance, and implementing
+                business solutions, with <br />a strong ability to work both
+                independently and within teams.
               </p>
               <motion.div
                 variants={fadeVariant("right", "spring", 1.5, 0.2)}
@@ -72,8 +74,8 @@ const Hero = () => {
                         className="fill-current"
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
-                        width={index === 0 ? 25 : 20}
-                        height={index === 0 ? 25 : 20}
+                        width={index === 0 ? 18 : 16}
+                        height={index === 0 ? 18 : 16}
                         viewBox={index === 0 ? "0 0 50 50" : "0 0 24 24"}
                       >
                         <path d={item.svg}></path>
@@ -83,7 +85,7 @@ const Hero = () => {
                 </div>
               </motion.div>
             </div>
-            <div className="w-full self-end px-4 lg:w-1/2 md:py-10">
+            <div className="w-full self-end px-4 lg:w-1/2 md:py-7">
               <div className="relative mt-10 lg:mt-0 lg:right-0 z-10">
                 <img
                   src="./images/hero.svg"

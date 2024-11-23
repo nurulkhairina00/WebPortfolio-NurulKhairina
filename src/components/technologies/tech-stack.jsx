@@ -24,7 +24,7 @@ const TechStack = () => {
   return (
     <>
       <div className="w-full px-4">
-        <div className="max-w-4xl mx-auto text-center mb-10">
+        <div className="w-full lg:w-5/6 mx-auto text-center mb-10">
           <h4 className="text-start font-extrabold text-2xl sm:text-3xl text-dark md:pt-5 pb-2 dark:text-light">
             Tech Stack
           </h4>

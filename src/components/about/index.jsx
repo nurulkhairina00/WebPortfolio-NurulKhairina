@@ -27,7 +27,7 @@ const Index = () => {
           >
             <span className="text-primary">ABOUT</span> ME
           </motion.h4>
-          <div className="flex flex-wrap mb-4">
+          <div className="flex flex-wrap mb-4 lg:mb-10">
             <motion.div
               ref={ref}
               variants={fadeVariant("up", "spring", 1.25, 0.2)}
@@ -39,7 +39,7 @@ const Index = () => {
                 <img
                   src="./images/profilrina.png"
                   alt="profil"
-                  className="cursor-pointer hover:scale-105 hover:ease-in-out w-5/6 2xl:w-2/3"
+                  className="cursor-pointer hover:scale-105 hover:ease-in-out w-3/4 2xl:w-2/3"
                 />
               </div>
             </motion.div>
@@ -76,7 +76,7 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className="max-w-6xl mx-auto text-center mb-10">
+          <div className="w-full mx-auto text-center mb-10 px-0 xl:px-20">
             <h4 className="text-start font-extrabold text-2xl sm:text-3xl text-dark pb-2 dark:text-light">
               My Work Experience
             </h4>
