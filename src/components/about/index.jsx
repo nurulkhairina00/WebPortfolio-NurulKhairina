@@ -27,7 +27,7 @@ const Index = () => {
           >
             <span className="text-primary">ABOUT</span> ME
           </motion.h4>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mb-4">
             <motion.div
               ref={ref}
               variants={fadeVariant("up", "spring", 1.25, 0.2)}
@@ -35,11 +35,13 @@ const Index = () => {
               animate={inView ? "show" : "hidden"}
               className="w-full px-4 mb-3 lg:w-1/2 hidden lg:block"
             >
-              <img
-                src="./images/rina.png"
-                alt="profil"
-                className="cursor-pointer hover:scale-105 hover:ease-in-out"
-              />
+              <div className="flex justify-center items-center">
+                <img
+                  src="./images/profilrina.png"
+                  alt="profil"
+                  className="cursor-pointer hover:scale-105 hover:ease-in-out w-5/6 2xl:w-2/3"
+                />
+              </div>
             </motion.div>
             <motion.div
               ref={ref}
@@ -54,7 +56,7 @@ const Index = () => {
                   href="./document/CV Nurul Khairina Surbakti.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base font-semibold text-secondary border-2 border-secondary py-[10px] px-8 rounded-full hover:bg-primary hover:text-light hover:border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-gray dark:hover:text-primary"
+                  className="text-base font-semibold text-secondary border-2 border-secondary py-2 px-8 rounded-full hover:bg-primary hover:text-light hover:border-primary hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-gray dark:hover:text-primary"
                 >
                   Download CV
                 </a>
@@ -66,11 +68,11 @@ const Index = () => {
                 </button>
               </div>
             </motion.div>
-            <div className="w-full px-4 mb-3 lg:w-1/2 lg:hidden">
+            <div className="w-full px-4 mb-3 lg:w-1/2 lg:hidden flex justify-center items-center mt-4">
               <img
-                src="./images/rina.png"
+                src="./images/profilrina.png"
                 alt="profil"
-                className="cursor-pointer hover:scale-105 hover:ease-in-out"
+                className="cursor-pointer hover:scale-105 hover:ease-in-out sm:w-3/5"
               />
             </div>
           </div>

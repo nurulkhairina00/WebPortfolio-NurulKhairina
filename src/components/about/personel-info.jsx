@@ -18,16 +18,19 @@ const PersonelInfo = () => {
   return (
     <>
       <h3 className="font-bold text-dark text-2xl mb-4 lg:text-3xl pt-6 dark:text-light">
-        Full Stack Developer
+        Software Maintenance
       </h3>
       <div className="border-[3px] w-20 border-primary rounded-full"></div>
       <p className=" text-base text-secondary text-justify mb-6 lg:text-md pt-4 dark:text-light">
-        Hello, my name is Nurul Khairina Surbakti. I graduated in Information
-        Engineering and currently work in an Bisnis Indonesia Group as a Full
-        Stack Developer. I have built, developed several projects with a team
-        and am interested in developing my career in a company using my existing
-        programming skills to develop web applications and being able to grow
-        and learn from other experienced team members
+        Hello, I’m Nurul Khairina Surbakti, a graduate in Information
+        Engineering, and I currently work at PT. Indodev Niaga Internet (DataOn)
+        as a Software Maintenance Specialist. I have a strong passion for web
+        development and specialize in building, optimizing, and maintaining web
+        applications. With expertise in debugging, system maintenance, and
+        turning business needs into efficient solutions, I thrive in
+        collaborative environments. Always eager to grow, I aim to leverage my
+        skills while learning from experienced team members and contributing to
+        innovative projects.
       </p>
       <div className="grid sm:grid-cols-2 gap-5">
         {/* calender */}
@@ -42,7 +45,7 @@ const PersonelInfo = () => {
                 <svg
                   className="fill-current cursor-pointer"
                   role="img"
-                  width={18}
+                  width={14}
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -62,7 +65,7 @@ const PersonelInfo = () => {
                     item.name === "WhatsApp" && "cursor-pointer"
                   }`}
                   role="img"
-                  width={18}
+                  width={14}
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

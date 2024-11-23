@@ -76,7 +76,7 @@ export const svgImageAbout = [
     id: 4,
     name: "Google Home",
     svg: "M12 0a1.44 1.44 0 0 0-.947.399L.547 10.762a1.26 1.26 0 0 0-.342.808v11.138c0 .768.53 1.292 1.311 1.292h20.968c.78 0 1.311-.522 1.311-1.292V11.57a1.25 1.25 0 0 0-.34-.804L15.68 3.097h-.001L12.947.4A1.454 1.454 0 0 0 12 0Zm0 6.727 6.552 6.456v5.65H5.446v-5.65z",
-    desc: "Tanah Abang, Jakarta Pusat",
+    desc: "Bintaro, Tangerang Selatan",
   },
 ];
 
@@ -280,11 +280,26 @@ export const toolsLogo = [
 export const workExperience = [
   {
     id: 1,
+    company: "PT. Indodev Niaga Internet (DataOn)",
+    job_title: "Software Maintenance",
+    work_schedule: "Full Time",
+    start_date: "April 2024",
+    end_date: "Present",
+    address: "Tangerang Selatan, Indonesia",
+    icon: "work",
+    jobdesk: [
+      "Debugging, Bug Fixing, and Bug Reporting: Identify, analyze, fix bugs in the HRIS system, report findings to the development team, and coordinate to resolve technical issues to ensure the system runs optimally.",
+      "General Software Support: Provide solutions to client issues in using Sunfish HRIS, Workplaze Mobile and Great Day, train clients on system features and modules, translate business requirements into implementable processes, and document and discuss customization requests with the development team.",
+      "Software System Maintenance: Performing code updates (patching) and optimizing database queries to ensure the system runs faster and more efficiently.  (The system is built using ColdFusion and utilizes MySQL or SQL Server databases.)",
+    ],
+  },
+  {
+    id: 2,
     company: "Bisnis Indonesia Group",
     job_title: "Full Stack Developer",
     work_schedule: "Full Time",
     start_date: "May 2022",
-    end_date: "Present",
+    end_date: "April 2024",
     address: "Jakarta Pusat, Indonesia",
     icon: "work",
     jobdesk: [
@@ -295,7 +310,7 @@ export const workExperience = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Asisst.id",
     job_title: "Front End Developer",
     work_schedule: "Internship",
@@ -311,7 +326,7 @@ export const workExperience = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "Bachelor Informatics Engineering",
     job_title: "Politeknik Caltex Riau",
     work_schedule: "3.70",
