@@ -21,7 +21,7 @@ const Contact = () => {
         Swal.fire({
           // imageUrl: "./images/success.png",
           icon: "success",
-          title: "Succedd!",
+          title: "Success!",
           text: "Email send successfully",
           showConfirmButton: false,
           timer: 1500,
